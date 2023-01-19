@@ -1,0 +1,4 @@
+app:
+  process:
+    max-attempts: 3
+    backoff: 500
