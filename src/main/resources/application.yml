@@ -2,3 +2,8 @@ app:
   process:
     max-attempts: 3
     backoff: 500
+management:
+  server:
+    port: 9990
+    ssl:
+      enabled: false

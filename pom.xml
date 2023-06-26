@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.klid</groupId>
     <artifactId>demo-springboot-retryable</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>demo-springboot-retryable</name>
     <description>demo-springboot-retryable</description>
     <properties>
@@ -20,6 +20,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
@@ -55,6 +60,17 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <from>
+                        <!--                        <image>eclipse-temurin:17-jre</image>-->
+                        <image>ghcr.io/graalvm/graalvm-ce:ol7-java17-22.3.2</image>
+                    </from>
+                </configuration>
             </plugin>
         </plugins>
     </build>
