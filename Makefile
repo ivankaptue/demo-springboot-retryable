@@ -26,6 +26,7 @@ install: clean
 
 .PHONY: build-image
 build-image: pom.xml install
+	eval $(minikube docker-env)
 	mvn jib:buildTar -Dimage=$(appName)
 	docker load -i target/jib-image.tar
 	docker tag $(appName) $(imageName)

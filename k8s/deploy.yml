@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: demo-springboot-retryable
-          image: demo-springboot-retryable:0.0.2-SNAPSHOT-06ee6f1
+          image: demo-springboot-retryable:0.0.3-SNAPSHOT-f00eba3
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
