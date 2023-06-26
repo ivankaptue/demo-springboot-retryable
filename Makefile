@@ -31,3 +31,4 @@ build-image: pom.xml install
 	docker load -i target/jib-image.tar
 	docker tag $(appName) $(imageName)
 	docker rmi $(appName)
+	minikube image load $(imageName)

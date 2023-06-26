@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.klid</groupId>
     <artifactId>demo-springboot-retryable</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>demo-springboot-retryable</name>
     <description>demo-springboot-retryable</description>
     <properties>
