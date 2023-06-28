@@ -15,7 +15,7 @@ public class NewService {
     private static final Logger logger = LoggerFactory.getLogger(NewService.class);
 
     @Retryable(
-            include = RetryableException.class,
+            retryFor = RetryableException.class,
             maxAttemptsExpression = "#{${app.process.max-attempts}}",
             backoff = @Backoff(delayExpression = "#{${app.process.backoff}}")
     )
